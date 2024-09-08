@@ -2,20 +2,17 @@ import mongoose from 'mongoose';
 
 const taskSchema = new mongoose.Schema({
 
+
     taskName: {
-        type: String,
-        required: true
+        type: String
     },
     taskDescription: {
-        type: String,
-        required: true
+        type: String
     },
     taskStatus: {
-        type: String,
-        required: true
+        type: String
     }
 });
 
 const Task = mongoose.model('Task', taskSchema);
-
 export default Task;
